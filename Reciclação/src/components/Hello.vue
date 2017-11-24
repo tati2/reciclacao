@@ -17,7 +17,7 @@ export default {
 
 <style>
 main {
-  background-image: url();
+  background-image: url(../assents/Logo-reciclacao-1.JPG);
 }
 
 </style>
