@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
-    <img src="../assets/logo-reciclação.png">
+    <main>
+      <img src="../assets/logo-reciclação.png">
+    </main>
   </div>
 </template>
 
@@ -17,19 +19,23 @@ export default {
 
 <style scoped>
 
-.hello {
+.hello {  
+  display: flex;
+  background-image: url(../assets/fundo-home.jpg);
+  background-size: cover;
+}
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: red;
-  background-image: url(../assets/fundo-home.jpg) center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 320px
+  background: rgba(133, 194, 39, 0.5);
+  min-height: 100vh;
+  box-sizing: border-box;
+
 }
+
 img {
-  width: 30%;
-  height: 20%
+  width: 75%;
 }
 
 </style>
