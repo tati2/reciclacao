@@ -1,15 +1,8 @@
 <template>
-  <div class="menu">
-    <nav>
-      <ul>
-        <li>Sobre</li>
-        <li>Ações</li>
-        <li>Impacto</li>
-        <li>Pontos de Coleta</li>
-        <li>Você Sabia?</li>
-        <li>Contato</li>
-      </ul>
-    </nav>
+  <div id="app">
+    <main>
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 
@@ -20,26 +13,15 @@ export default {
 </script>
 
 <style scoped>
-. {
-  margin: 0
-}
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  align-content: center;
-  background-color: blue;
-  height: 5%;
+body {
+  margin: 0;
 }
 
-ul {
-  display: flex;
-  justify-content: flex-end;
-  align-content: flex-end;
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
 }
 
-li {
-  display: flex;
-  list-style: none;
-  margin: 0 15px;
-}
 </style>
