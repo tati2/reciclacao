@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <img src="../assets/logo-reciclação.jpg">
+    <img src="../assets/logo-reciclação.png">
   </div>
 </template>
 
@@ -20,11 +20,12 @@ export default {
 .hello {
   display: flex;
   justify-content: center;
-  align-content: center;
-  background-color: rgba( 104 176 36 50);
-  background-image: url(../assets/fundo-home.jpg);
+  align-items: center;
+  color: red;
+  background-image: url(../assets/fundo-home.jpg) center center;
   background-size: cover;
-  height: 100%;
+  background-repeat: no-repeat;
+  min-height: 320px
 }
 img {
   width: 30%;
