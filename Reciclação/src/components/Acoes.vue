@@ -1,6 +1,6 @@
 <template>
   <div class="acoes">
-    <div class="munu-acoes">
+    <div class="munu">
       <h1>Ações</h1>
       <ul>
         <li>Encontros com Escolas >></li>
@@ -12,7 +12,16 @@
       </ul>
     </div>
     <div>
-      
+      <ul v-for="evento in eventos-acoes">
+        <li>
+          <div>
+            <div class="descricao-evento">
+              <span>{{}}</span>
+              <p class="tag">{{}}</p>
+            </div>
+          </div>      
+        </li>       
+      </ul>   
     </div>  
   </div>
 </template>
@@ -22,7 +31,9 @@ export default {
   name: 'hello',
   data () {
     return {
-     
+      eventos_acoes: [
+
+      ]
     }
   }
 }
@@ -30,11 +41,12 @@ export default {
 
 <style scoped>
 
-.menu-acoes {
+.menu{
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-image: url(../assets/fundo-acoes.jpg);
+  padding: 5%
 }
 
 h1 {
