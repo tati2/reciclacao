@@ -29,6 +29,7 @@ export default {
   justify-content: center;
   align-content: center;
   height: 5%;
+  background-color: white;
 }
 
 nav {

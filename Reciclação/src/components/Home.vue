@@ -1,13 +1,13 @@
 <template>
   <div class="hello">
-    <Munu></Munu>
-    <header>
+    <Menu></Menu>
+    <section>
       <img src="../assets/logo-reciclação.png">
       <h1>Seja a mudança que<br> sua comunidade precisa</h1>
-    </header>
-    <main>
+    </section>
+    <div>
       <Acoes></Acoes>
-    </main>
+    </div>
   </div>
 </template>
 
@@ -33,15 +33,15 @@ export default {
   flex-direction: column;
   background-image: url(../assets/fundo-home.jpg);
   background-size: cover;
+  background-position: center;
 }
-header {
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgba(122, 180, 32, 0.6);
   min-height: 100vh;
-
 }
 
 img {
@@ -52,10 +52,6 @@ h1 {
   text-align: center;
   color: white;
   font-size: 1.34em
-}
-
-Menu {
-  height: 100px
 }
 
 </style>
