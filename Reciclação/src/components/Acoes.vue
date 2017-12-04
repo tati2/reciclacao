@@ -4,7 +4,7 @@
       <div class="menu">  
         <h1>Ações</h1>
           <ul>
-            <li>Encontros com Escolas >></li>
+            <li class="menuAcoes01">Encontros com Escolas >></li>
             <li>Cefé no ponto >></li>
             <li>Palestras temáticas >></li>
             <li>Mutirão de limpeza >></li>
@@ -42,19 +42,24 @@ export default {
 
 <style scoped>
 
-section {
+.acoes {
   background-image: url(../assets/fundo-acoes.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+section {
+  background: rgba(122, 180, 32, 0.6);
+  background-size: 100vh;
+ 
 }
 
 .menu{
   display: flex;
   flex-direction: column;
-  color: white;
-  background: rgba(122, 180, 32, 0.6);
-  min-height: 100vh;
+  
   padding: 5%
 }
 
@@ -67,10 +72,18 @@ ul {
 }
 
 li {
+  display: flex;
   list-style: none;
-  margin: 0;
   background-color: white;
   color: #E67816;
+  margin: 0;
+  padding: 1%;;
+  width: 100%
+}
+
+.menuAcoes01 {
+ padding-right: 0;
+ margin: 0;
 
 }
 </style>
