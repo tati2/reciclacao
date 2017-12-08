@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Acoes from '@/components/Acoes'
 import Menu from  '@/components/Menu'
+import Encontros from '@/components/AcoesComponents/Encontros'
 
 
 Vue.use(Router)
@@ -15,7 +16,7 @@ export default new Router({
       component: Home
     },
     {
-    	path: '/Acoes',
+    	path: '/AcoesC',
     	name: 'Acoes',
     	component: Acoes
     },
@@ -23,6 +24,11 @@ export default new Router({
       path: '/Menu',
       name: 'Menu',
       component: Menu
+    },
+    {
+      path: '/Encontros',
+      name: 'Encontros',
+      component: Encontros
     }  
   ]
 })
