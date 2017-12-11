@@ -1,32 +1,31 @@
 <template>
    <section>
-    <div class="descricao">
-      <h1>Encontros com Escolas</h1>
-      <p>Para o sucesso da ação no território, conectar os espaços de educação é para nós a garantia do sucesso. Dialogando com coordenação, direção, professores e alunos (muitos destes moradores do Morro dos Prazeres).</p>
-      <p>Tais espaços são a Creche Municipal José Marinho de Oliveira, Centro de Desenvolvimento e Educação Integrada Amália Fernandes Conde (Casarão dos Prazeres), Creche Cantinho Feliz, E.M. Julia Lopes de Almeida, E.M. Machado de Assis e C.E. Monteiro de Carvalho</p>
+    <div>
+      <h1>Café no ponto</h1>
+      <p>É uma forma atraente e prazerosa de unir pessoas para falar de temas voltados ao desenvolvimento de território onde vivem, moram e trabalham. Pensando na necessidade do ser humano de se alimentar, usamos essa oportunidade para seduzir os moradores e despertar o desejo de participar da ação.</p>
     </div>
-    <div class="slide">
-      <div class="CSSgal">
-        <!-- Don't wrap targets in parent -->
-        <s id="s1"></s> 
-        <s id="s2"></s>
-        <s id="s3"></s>
-        <s id="s4"></s>
+      <div>
+        <div class="CSSgal">
+          <!-- Don't wrap targets in parent -->
+          <s id="s1"></s> 
+          <s id="s2"></s>
+          <s id="s3"></s>
+          <s id="s4"></s>
 
-        <div class="slider">
-          <div style="background:#5b8;">
-            <h2>PURE <b>CSS</b> SLIDESHOW</h2>
+          <div class="slider">
+            <div style="background:#5b8;">
+              <h2>PURE <b>CSS</b> SLIDESHOW</h2>
+            </div>
+            <div style="background:#85b;">
+              <h2>Slide 2</h2>
+            </div>
+            <div style="background:#e95;">
+              <h2>Slide 3</h2>
+            </div>
+            <div style="background:#e59;">
+              <h2>Slide 4</h2>
+            </div>
           </div>
-          <div style="background:#85b;">
-            <h2>Slide 2</h2>
-          </div>
-          <div style="background:#e95;">
-            <h2>Slide 3</h2>
-          </div>
-          <div style="background:#e59;">
-            <h2>Slide 4</h2>
-          </div>
-        </div>
           
           <div class="prevNext">
             <div><a href="#s4"></a><a href="#s2"></a></div>
@@ -52,35 +51,13 @@
 </script>
 
 <style scoped>
-* {
-  box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
-  margin: 0;
-}
+*{  box-sizing: border-box; -webkit-box-sizing: border-box; }
+body { margin: 0; font: 16px/1.3 sans-serif; }
 
-.descricao {
-  padding: 5%;
-}
-
-h1 {
-  font-size: 2.5em;
-  color: rgb(0, 146, 63);
-}
-
-p {
-  font-size: 0.85em
-}
-
-.slide {
-  width: 100%
-}
-/*=================================================================
-
-
-
+/*
 PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
-===================================================================*/
+*/
 
 .CSSgal {
   position: relative;
@@ -127,9 +104,9 @@ http://stackoverflow.com/a/34696029/383904
 .CSSgal .prevNext a {
   background: #fff;
   position: absolute;
-  width:       60px;
-  height:      60px;
-  line-height: 60px; /* If you want to place numbers */
+  width:       40px;
+  height:      40px;
+  line-height: 40px; /* If you want to place numbers */
   text-align: center;
   opacity: 0.7;
   -webkit-transition: 0.3s;
