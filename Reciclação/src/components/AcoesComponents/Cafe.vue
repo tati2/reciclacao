@@ -1,6 +1,6 @@
 <template>
    <section>
-    <div>
+    <div class="descricao">
       <h1>Café no ponto</h1>
       <p>É uma forma atraente e prazerosa de unir pessoas para falar de temas voltados ao desenvolvimento de território onde vivem, moram e trabalham. Pensando na necessidade do ser humano de se alimentar, usamos essa oportunidade para seduzir os moradores e despertar o desejo de participar da ação.</p>
     </div>
@@ -13,16 +13,16 @@
           <s id="s4"></s>
 
           <div class="slider">
-            <div style="background:#5b8;">
+            <div>
               <h2>PURE <b>CSS</b> SLIDESHOW</h2>
             </div>
-            <div style="background:#85b;">
+            <div>
               <h2>Slide 2</h2>
             </div>
-            <div style="background:#e95;">
+            <div>
               <h2>Slide 3</h2>
             </div>
-            <div style="background:#e59;">
+            <div>
               <h2>Slide 4</h2>
             </div>
           </div>
@@ -51,18 +51,52 @@
 </script>
 
 <style scoped>
-*{  box-sizing: border-box; -webkit-box-sizing: border-box; }
-body { margin: 0; font: 16px/1.3 sans-serif; }
+* {
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  margin: 0;
+  background-color: rgba(51, 51, 51, 1)
+}
 
-/*
+section {
+  min-height: 100vh;
+  padding: auto 0px;
+}
+
+.descricao {
+  padding: 5%;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: rgb(0, 146, 63);
+}
+
+p {
+  font-size: 0.85em;
+  margin:5% 0px;
+  color: white;
+}
+
+.slide {
+  width: 100%
+}
+
+img {
+  height: 100%
+}
+/*=================================================================
+
+
+
 PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
-*/
+===================================================================*/
 
 .CSSgal {
   position: relative;
   overflow: hidden;
-  height: 100%; /* Or set a fixed height */
+  height: 40vh; /* Or set a fixed height */
 }
 
 /* SLIDER */
@@ -104,9 +138,9 @@ http://stackoverflow.com/a/34696029/383904
 .CSSgal .prevNext a {
   background: #fff;
   position: absolute;
-  width:       40px;
-  height:      40px;
-  line-height: 40px; /* If you want to place numbers */
+  width:       60px;
+  height:      60px;
+  line-height: 60px; /* If you want to place numbers */
   text-align: center;
   opacity: 0.7;
   -webkit-transition: 0.3s;

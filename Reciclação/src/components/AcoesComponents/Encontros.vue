@@ -15,7 +15,7 @@
 
         <div class="slider">
           <div style="background:#5b8;">
-            <h2>PURE <b>CSS</b> SLIDESHOW</h2>
+            <img src="https://images.vexels.com/media/users/3/131796/isolated/preview/a255fb7cf0cdf19660e0a6257121de8b--cone-do-c-rculo-de-batata-by-vexels.png">
           </div>
           <div style="background:#85b;">
             <h2>Slide 2</h2>
@@ -56,6 +56,7 @@
   box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   margin: 0;
+
 }
 
 .descricao {
@@ -68,11 +69,17 @@ h1 {
 }
 
 p {
-  font-size: 0.85em
+  font-size: 0.85em;
+  margin:5% 0px;
+  color: 000;
 }
 
 .slide {
   width: 100%
+}
+
+img {
+  height: 100%
 }
 /*=================================================================
 
@@ -85,7 +92,7 @@ http://stackoverflow.com/a/34696029/383904
 .CSSgal {
   position: relative;
   overflow: hidden;
-  height: 100%; /* Or set a fixed height */
+  height: 40vh; /* Or set a fixed height */
 }
 
 /* SLIDER */

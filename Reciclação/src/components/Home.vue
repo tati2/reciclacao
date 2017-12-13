@@ -36,16 +36,16 @@ export default {
 .hello {  
   display: flex;
   flex-direction: column;
-  background-image: url(../assets/fundo-home.jpg);
-  background-size: cover;
-  background-position: center;
+  
 }
 section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(122, 180, 32, 0.6);
+  background-image: url(../assets/fundohome.jpg);
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
 }
 

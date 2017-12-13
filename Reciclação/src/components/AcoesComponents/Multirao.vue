@@ -1,6 +1,6 @@
 <template>
    <section>
-    <div>
+    <div class="descricao">
       <h1>Mutirão de Limpeza</h1>
       <p>É uma dinâmica que agrega valores comunitários, grupais, sociais e ambientais para melhoria e cuidado do território, onde as pessoas são convidadas a praticar ações em benefício do ambiente onde residem.</p>
       <p>O mutirão agrega diferentes valores em rede, conseguimos através dessa ação conectar moradores da comunidade e diferentes parceiros como COMLURB, Agentes de Vigilância e Saúde, diferentes secretarias, comerciantes locais, grupos culturais e toda nossa rede de apoio.</p>
@@ -52,18 +52,45 @@
 </script>
 
 <style scoped>
-*{  box-sizing: border-box; -webkit-box-sizing: border-box; }
-body { margin: 0; font: 16px/1.3 sans-serif; }
+* {
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  margin: 0;
+}
 
-/*
+.descricao {
+  padding: 5%;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: rgb(0, 146, 63);
+}
+
+p {
+  font-size: 0.85em;
+  margin:5% 0px;
+}
+
+.slide {
+  width: 100%
+}
+
+img {
+  height: 100%
+}
+/*=================================================================
+
+
+
 PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
-*/
+===================================================================*/
 
 .CSSgal {
   position: relative;
   overflow: hidden;
-  height: 100%; /* Or set a fixed height */
+  height: 40vh; /* Or set a fixed height */
 }
 
 /* SLIDER */

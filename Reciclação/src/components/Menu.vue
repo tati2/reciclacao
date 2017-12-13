@@ -63,4 +63,32 @@ li {
   margin: 2%;
   width: 45%;
 }
+
+@media screen and (min-width: 720px){
+
+  nav {
+    height: 6vh;
+    justify-content: space-around;
+  }
+
+  ul{
+    width: 90%;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    margin: 0px;
+  }
+
+  li {
+    width: 10%;
+    margin: 0px;
+    flex-flow: row nowrap;
+    margin: auto 0;
+  }
+
+  img {
+    width: 10%;
+    height: 0;
+  }
+
+}
 </style>

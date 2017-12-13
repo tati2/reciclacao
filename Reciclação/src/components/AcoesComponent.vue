@@ -11,16 +11,15 @@
 		<div>
 			<palestra></palestra>
 		</div>
-		<div>
 
+		<div>
 			<multirao></multirao>
 		</div>
 		<div>
-
 			<aedes></aedes>
 		</div>
-		<div>
 
+		<div>
 			<coleta></coleta>
 		</div>
 		
@@ -43,5 +42,9 @@ export default {
 	
 </script>
 <style scoped>	
+
+div {
+	margin: 10% 0px 	;
+}
 	
 </style>

@@ -1,6 +1,6 @@
 <template>
    <section>
-    <div>
+    <div class="descricao">
       <h1>10 min contra o Aedes Aegypti</h1>
       <p>Realizamos uma grande gincana reunindo as crianças e adolescentes que participam dos projetos desenvolvidos na comunidade, além dos moradores e parceiros. Os participantes são divididos em grupos e seguem para uma área especifica da favela para recolher todo e qualquer material descartado de forma irregular, além de descobrir e eliminar focos do mosquito. De forma lúdica e divertida, todos aprendem que uma comunidade saudável é dever e direito de todos.</p>
     </div>
@@ -51,18 +51,45 @@
 </script>
 
 <style scoped>
-*{  box-sizing: border-box; -webkit-box-sizing: border-box; }
-body { margin: 0; font: 16px/1.3 sans-serif; }
+* {
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  margin: 0;
+}
 
-/*
+.descricao {
+  padding: 5%;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: rgb(0, 146, 63);
+}
+
+p {
+  font-size: 0.85em;
+  margin:5% 0px;
+}
+
+.slide {
+  width: 100%
+}
+
+img {
+  height: 100%
+}
+/*=================================================================
+
+
+
 PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
-*/
+===================================================================*/
 
 .CSSgal {
   position: relative;
   overflow: hidden;
-  height: 100%; /* Or set a fixed height */
+  height: 40vh; /* Or set a fixed height */
 }
 
 /* SLIDER */

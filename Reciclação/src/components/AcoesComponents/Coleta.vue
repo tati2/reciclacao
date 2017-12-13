@@ -1,6 +1,6 @@
 <template>
    <section>
-    <div>
+    <div class="descricao">
       <h1>Coleta seletiva</h1>
       <p>Hoje temos cerca de 40 pontos com ecobags espalhados pela comunidade. Neles os moradores depositam resíduos como pet, tetra pak, alumínio, papelão, papel e qualquer plástico duro. Além disso, ainda há moradores que juntam óleo vegetal usado para nos doar.</p>
     </div>
@@ -51,18 +51,45 @@
 </script>
 
 <style scoped>
-*{  box-sizing: border-box; -webkit-box-sizing: border-box; }
-body { margin: 0; font: 16px/1.3 sans-serif; }
+* {
+  box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  margin: 0;
+}
 
-/*
+.descricao {
+  padding: 5%;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: rgb(0, 146, 63);
+}
+
+p {
+  font-size: 0.85em;
+  margin:5% 0px;
+}
+
+.slide {
+  width: 100%
+}
+
+img {
+  height: 100%
+}
+/*=================================================================
+
+
+
 PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
-*/
+===================================================================*/
 
 .CSSgal {
   position: relative;
   overflow: hidden;
-  height: 100%; /* Or set a fixed height */
+  height: 40vh; /* Or set a fixed height */
 }
 
 /* SLIDER */

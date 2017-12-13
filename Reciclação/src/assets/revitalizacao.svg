@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4531.386 3997.365 201.12 201.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 10px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="revitalizacao" transform="translate(4172)">
+    <g id="Group_9" data-name="Group 9" transform="translate(407.3 4031.082)">
+      <path id="Path_28" data-name="Path 28" class="cls-1" d="M30.655,197.546H91.109L98.621,157.5H21.9Z" transform="translate(-8.946 -64.302)"/>
+      <path id="Path_29" data-name="Path 29" class="cls-1" d="M6.27,134.108H98.016l7.1-24.608H0Z" transform="translate(0 -44.695)"/>
+      <path id="Path_30" data-name="Path 30" class="cls-1" d="M50.995,36.593S43.3,18.019,28.694,8.437c0,0,32.12,14.2,28.807,53.415l3.135-.237S56.259-1.8,102.99,10.507c0,0-18.988.237-23.365,4.2,0,0,12.718,13.132,31.706-1.479,0,0-15.853-20.644-34.6-2.9,0,0,.237-3.135,4.377-7.217,0,0-11.062,4.5-22.3,33.658,0,0-6.034-40.875-43.6-36.5C15.148.333,11.185,44.342,50.995,36.593Z" transform="translate(-6.157 0.055)"/>
+    </g>
+    <g id="Ellipse_16" data-name="Ellipse 16" class="cls-2" transform="translate(359.386 3997.365)">
+      <ellipse class="cls-3" cx="100.56" cy="100.56" rx="100.56" ry="100.56"/>
+      <ellipse class="cls-4" cx="100.56" cy="100.56" rx="95.56" ry="95.56"/>
+    </g>
+  </g>
+</svg>
