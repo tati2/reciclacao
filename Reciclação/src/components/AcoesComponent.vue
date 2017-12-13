@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<div>
+		<div >
 			<encontros></encontros>
 		</div>
 
@@ -22,7 +22,6 @@
 		<div>
 			<coleta></coleta>
 		</div>
-		
 	</section>
 </template>
 <script>
@@ -43,8 +42,14 @@ export default {
 </script>
 <style scoped>	
 
+
 div {
-	margin: 10% 0px 	;
+	height: auto;
+
 }
+
+encontros, cafe, palestra, multirao, aedes, coleta {
+
+} 
 	
 </style>

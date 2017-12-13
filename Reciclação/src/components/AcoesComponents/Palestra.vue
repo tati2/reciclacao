@@ -4,15 +4,15 @@
       <h1>Palestras temáticas</h1>
       <p>São encontros com temáticas específicas para sensibilizar e pensar no desenvolvimento de ações no território. Como por exemplo os mutirões de limpeza de lixo, brigada mirim contra o mosquito Aedes Aegypti e outros.</p>
     </div>
-      <div>
-        <div class="CSSgal">
+      <div class="slidepalestra">
+        <div class="CSSgalpalestra">
           <!-- Don't wrap targets in parent -->
-          <s id="s1"></s> 
-          <s id="s2"></s>
-          <s id="s3"></s>
-          <s id="s4"></s>
+          <s id="s1palestra"></s> 
+          <s id="s2palestra"></s>
+          <s id="s3palestra"></s>
+          <s id="s4palestra"></s>
 
-          <div class="slider">
+          <div class="sliderpalestra">
             <div style="background:#5b8;">
               <h2>PURE <b>CSS</b> SLIDESHOW</h2>
             </div>
@@ -27,18 +27,18 @@
             </div>
           </div>
           
-          <div class="prevNext">
-            <div><a href="#s4"></a><a href="#s2"></a></div>
-            <div><a href="#s1"></a><a href="#s3"></a></div>
-            <div><a href="#s2"></a><a href="#s4"></a></div>
-            <div><a href="#s3"></a><a href="#s1"></a></div>
+          <div class="prevNextpalestra">
+            <div><a href="#s4palestra"></a><a href="#s2palestra"></a></div>
+            <div><a href="#s1palestra"></a><a href="#s3palestra"></a></div>
+            <div><a href="#s2palestra"></a><a href="#s4palestra"></a></div>
+            <div><a href="#s3palestra"></a><a href="#s1palestra"></a></div>
           </div>
 
-          <div class="bullets">
-            <a href="#s1">1</a>
-            <a href="#s2">2</a>
-            <a href="#s3">3</a>
-            <a href="#s4">4</a>
+          <div class="bulletspalestra">
+            <a href="#s1palestra">1</a>
+            <a href="#s2palestra">2</a>
+            <a href="#s3palestra">3</a>
+            <a href="#s4palestra">4</a>
           </div>
         </div>
       </div>
@@ -53,8 +53,8 @@
 <style scoped>
 * {
   box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
   margin: 0;
+  background-color: rgba(255, 249, 116, 1);
 }
 
 .descricao {
@@ -71,7 +71,7 @@ p {
   margin:5% 0px;
 }
 
-.slide {
+.slidepalestra {
   width: 100%
 }
 
@@ -82,19 +82,19 @@ img {
 
 
 
-PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+PURE RESPONSIVE CSS3palestra SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
 ===================================================================*/
 
-.CSSgal {
+.CSSgalpalestra {
   position: relative;
   overflow: hidden;
   height: 40vh; /* Or set a fixed height */
 }
 
-/* SLIDER */
+/* SLIDERpalestra */
 
-.CSSgal .slider {
+.CSSgalpalestra .sliderpalestra {
   height: 100%;
   white-space: nowrap;
   font-size: 0;
@@ -103,7 +103,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* SLIDES */
 
-.CSSgal .slider > * {
+.CSSgalpalestra .sliderpalestra > * {
   font-size: 1rem;
   display: inline-block;
   white-space: normal;
@@ -116,7 +116,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* PREV/NEXT, CONTAINERS & ANCHORS */
 
-.CSSgal .prevNext {
+.CSSgalpalestra .prevNextpalestra {
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -124,11 +124,11 @@ http://stackoverflow.com/a/34696029/383904
   height: 0;
 }
 
-.CSSgal .prevNext > div+div {
+.CSSgalpalestra .prevNextpalestra > div+div {
   visibility: hidden; /* Hide all but first P/N container */
 }
 
-.CSSgal .prevNext a {
+.CSSgalpalestra .prevNextpalestra a {
   background: #fff;
   position: absolute;
   width:       60px;
@@ -142,17 +142,17 @@ http://stackoverflow.com/a/34696029/383904
           transform: translateY(-50%);
   left: 0;
 }
-.CSSgal .prevNext a:hover {
+.CSSgalpalestra .prevNextpalestra a:hover {
   opacity: 1;
 }
-.CSSgal .prevNext a+a {
+.CSSgalpalestra .prevNextpalestra a+a {
   left: auto;
   right: 0;
 }
 
 /* NAVIGATION */
 
-.CSSgal .bullets {
+.CSSgalpalestra .bulletspalestra {
   position: absolute;
   z-index: 2;
   bottom: 0;
@@ -160,7 +160,7 @@ http://stackoverflow.com/a/34696029/383904
   width: 100%;
   text-align: center;
 }
-.CSSgal .bullets > a {
+.CSSgalpalestra .bulletspalestra > a {
   display: inline-block;
   width:       30px;
   height:      30px;
@@ -171,59 +171,59 @@ http://stackoverflow.com/a/34696029/383904
   -webkit-transition: 0.3s;
           transition: 0.3s;
 }
-.CSSgal .bullets > a+a {
+.CSSgalpalestra .bulletspalestra > a+a {
   background: rgba(255, 255, 255, 0.5); /* Dim all but first */
 }
-.CSSgal .bullets > a:hover {
+.CSSgalpalestra .bulletspalestra > a:hover {
   background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* NAVIGATION BUTTONS */
 /* ALL: */
-.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+.CSSgalpalestra >s:target ~ .bulletspalestra >* {      background: rgba(255, 255, 255, 0.5);}
 /* ACTIVE */
-#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
-#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
-#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
-#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+#s1palestra:target ~ .bulletspalestra >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2palestra:target ~ .bulletspalestra >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3palestra:target ~ .bulletspalestra >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4palestra:target ~ .bulletspalestra >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
 /* More slides? Add here more rules */
 
 /* PREV/NEXT CONTAINERS VISIBILITY */
 /* ALL: */
-.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+.CSSgalpalestra >s:target ~ .prevNextpalestra >* {      visibility: hidden;}
 /* ACTIVE: */
-#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
-#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
-#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
-#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s1palestra:target ~ .prevNextpalestra >*:nth-child(1) {visibility: visible;}
+#s2palestra:target ~ .prevNextpalestra >*:nth-child(2) {visibility: visible;}
+#s3palestra:target ~ .prevNextpalestra >*:nth-child(3) {visibility: visible;}
+#s4palestra:target ~ .prevNextpalestra >*:nth-child(4) {visibility: visible;}
 /* More slides? Add here more rules */
 
-/* SLIDER ANIMATION POSITIONS */
+/* SLIDERpalestra ANIMATION POSITIONS */
 
-#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s1palestra:target ~ .sliderpalestra {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2palestra:target ~ .sliderpalestra {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3palestra:target ~ .sliderpalestra {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4palestra:target ~ .sliderpalestra {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
 /* More slides? Add here more rules */
 
 
 /* YOU'RE THE DESIGNER! 
    ____________________
    All above was mainly to get it working :)
-   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+   CSSgalpalestra CUSTOM STYLES / OVERRIDES HERE: */
 
-.CSSgal{
+.CSSgalpalestra{
   color: #fff;  
   text-align: center;
 }
-.CSSgal .slider h2 {
+.CSSgalpalestra .sliderpalestra h2 {
   margin-top: 40vh;
   font-weight: 200;
   letter-spacing: -0.06em;
   word-spacing: 0.2em;
   font-size: 3em;
 }
-.CSSgal a {
+.CSSgalpalestra a {
   border-radius: 50%;
   margin: 0 3px;
   color: rgba(0,0,0,0.8);

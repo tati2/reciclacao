@@ -5,15 +5,15 @@
       <p>É uma dinâmica que agrega valores comunitários, grupais, sociais e ambientais para melhoria e cuidado do território, onde as pessoas são convidadas a praticar ações em benefício do ambiente onde residem.</p>
       <p>O mutirão agrega diferentes valores em rede, conseguimos através dessa ação conectar moradores da comunidade e diferentes parceiros como COMLURB, Agentes de Vigilância e Saúde, diferentes secretarias, comerciantes locais, grupos culturais e toda nossa rede de apoio.</p>
     </div>
-      <div>
-        <div class="CSSgal">
+      <div class="slidemultirao">
+        <div class="CSSgalmultirao">
           <!-- Don't wrap targets in parent -->
-          <s id="s1"></s> 
-          <s id="s2"></s>
-          <s id="s3"></s>
-          <s id="s4"></s>
+          <s id="s1multirao"></s> 
+          <s id="s2multirao"></s>
+          <s id="s3multirao"></s>
+          <s id="s4multirao"></s>
 
-          <div class="slider">
+          <div class="slidermultirao">
             <div style="background:#5b8;">
               <h2>PURE <b>CSS</b> SLIDESHOW</h2>
             </div>
@@ -28,18 +28,18 @@
             </div>
           </div>
           
-          <div class="prevNext">
-            <div><a href="#s4"></a><a href="#s2"></a></div>
-            <div><a href="#s1"></a><a href="#s3"></a></div>
-            <div><a href="#s2"></a><a href="#s4"></a></div>
-            <div><a href="#s3"></a><a href="#s1"></a></div>
+          <div class="prevNextmultirao">
+            <div><a href="#s4multirao"></a><a href="#s2multirao"></a></div>
+            <div><a href="#s1multirao"></a><a href="#s3multirao"></a></div>
+            <div><a href="#s2multirao"></a><a href="#s4multirao"></a></div>
+            <div><a href="#s3multirao"></a><a href="#s1multirao"></a></div>
           </div>
 
-          <div class="bullets">
-            <a href="#s1">1</a>
-            <a href="#s2">2</a>
-            <a href="#s3">3</a>
-            <a href="#s4">4</a>
+          <div class="bulletsmultirao">
+            <a href="#s1multirao">1</a>
+            <a href="#s2multirao">2</a>
+            <a href="#s3multirao">3</a>
+            <a href="#s4multirao">4</a>
           </div>
         </div>
       </div>
@@ -72,7 +72,7 @@ p {
   margin:5% 0px;
 }
 
-.slide {
+.slidemultirao {
   width: 100%
 }
 
@@ -83,19 +83,19 @@ img {
 
 
 
-PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+PURE RESPONSIVE CSS3multirao SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
 ===================================================================*/
 
-.CSSgal {
+.CSSgalmultirao {
   position: relative;
   overflow: hidden;
   height: 40vh; /* Or set a fixed height */
 }
 
-/* SLIDER */
+/* SLIDERmultirao */
 
-.CSSgal .slider {
+.CSSgalmultirao .slidermultirao {
   height: 100%;
   white-space: nowrap;
   font-size: 0;
@@ -104,7 +104,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* SLIDES */
 
-.CSSgal .slider > * {
+.CSSgalmultirao .slidermultirao > * {
   font-size: 1rem;
   display: inline-block;
   white-space: normal;
@@ -117,7 +117,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* PREV/NEXT, CONTAINERS & ANCHORS */
 
-.CSSgal .prevNext {
+.CSSgalmultirao .prevNextmultirao {
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -125,11 +125,11 @@ http://stackoverflow.com/a/34696029/383904
   height: 0;
 }
 
-.CSSgal .prevNext > div+div {
+.CSSgalmultirao .prevNextmultirao > div+div {
   visibility: hidden; /* Hide all but first P/N container */
 }
 
-.CSSgal .prevNext a {
+.CSSgalmultirao .prevNextmultirao a {
   background: #fff;
   position: absolute;
   width:       60px;
@@ -143,17 +143,17 @@ http://stackoverflow.com/a/34696029/383904
           transform: translateY(-50%);
   left: 0;
 }
-.CSSgal .prevNext a:hover {
+.CSSgalmultirao .prevNextmultirao a:hover {
   opacity: 1;
 }
-.CSSgal .prevNext a+a {
+.CSSgalmultirao .prevNextmultirao a+a {
   left: auto;
   right: 0;
 }
 
 /* NAVIGATION */
 
-.CSSgal .bullets {
+.CSSgalmultirao .bulletsmultirao {
   position: absolute;
   z-index: 2;
   bottom: 0;
@@ -161,7 +161,7 @@ http://stackoverflow.com/a/34696029/383904
   width: 100%;
   text-align: center;
 }
-.CSSgal .bullets > a {
+.CSSgalmultirao .bulletsmultirao > a {
   display: inline-block;
   width:       30px;
   height:      30px;
@@ -172,59 +172,59 @@ http://stackoverflow.com/a/34696029/383904
   -webkit-transition: 0.3s;
           transition: 0.3s;
 }
-.CSSgal .bullets > a+a {
+.CSSgalmultirao .bulletsmultirao > a+a {
   background: rgba(255, 255, 255, 0.5); /* Dim all but first */
 }
-.CSSgal .bullets > a:hover {
+.CSSgalmultirao .bulletsmultirao > a:hover {
   background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* NAVIGATION BUTTONS */
 /* ALL: */
-.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+.CSSgalmultirao >s:target ~ .bulletsmultirao >* {      background: rgba(255, 255, 255, 0.5);}
 /* ACTIVE */
-#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
-#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
-#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
-#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+#s1multirao:target ~ .bulletsmultirao >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2multirao:target ~ .bulletsmultirao >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3multirao:target ~ .bulletsmultirao >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4multirao:target ~ .bulletsmultirao >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
 /* More slides? Add here more rules */
 
 /* PREV/NEXT CONTAINERS VISIBILITY */
 /* ALL: */
-.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+.CSSgalmultirao >s:target ~ .prevNextmultirao >* {      visibility: hidden;}
 /* ACTIVE: */
-#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
-#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
-#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
-#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s1multirao:target ~ .prevNextmultirao >*:nth-child(1) {visibility: visible;}
+#s2multirao:target ~ .prevNextmultirao >*:nth-child(2) {visibility: visible;}
+#s3multirao:target ~ .prevNextmultirao >*:nth-child(3) {visibility: visible;}
+#s4multirao:target ~ .prevNextmultirao >*:nth-child(4) {visibility: visible;}
 /* More slides? Add here more rules */
 
-/* SLIDER ANIMATION POSITIONS */
+/* SLIDERmultirao ANIMATION POSITIONS */
 
-#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s1multirao:target ~ .slidermultirao {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2multirao:target ~ .slidermultirao {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3multirao:target ~ .slidermultirao {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4multirao:target ~ .slidermultirao {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
 /* More slides? Add here more rules */
 
 
 /* YOU'RE THE DESIGNER! 
    ____________________
    All above was mainly to get it working :)
-   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+   CSSgalmultirao CUSTOM STYLES / OVERRIDES HERE: */
 
-.CSSgal{
+.CSSgalmultirao{
   color: #fff;  
   text-align: center;
 }
-.CSSgal .slider h2 {
+.CSSgalmultirao .slidermultirao h2 {
   margin-top: 40vh;
   font-weight: 200;
   letter-spacing: -0.06em;
   word-spacing: 0.2em;
   font-size: 3em;
 }
-.CSSgal a {
+.CSSgalmultirao a {
   border-radius: 50%;
   margin: 0 3px;
   color: rgba(0,0,0,0.8);

@@ -5,7 +5,7 @@
       <p>Para o sucesso da ação no território, conectar os espaços de educação é para nós a garantia do sucesso. Dialogando com coordenação, direção, professores e alunos (muitos destes moradores do Morro dos Prazeres).</p>
       <p>Tais espaços são a Creche Municipal José Marinho de Oliveira, Centro de Desenvolvimento e Educação Integrada Amália Fernandes Conde (Casarão dos Prazeres), Creche Cantinho Feliz, E.M. Julia Lopes de Almeida, E.M. Machado de Assis e C.E. Monteiro de Carvalho</p>
     </div>
-    <div class="slide">
+    <div class="slideencontro">
       <div class="CSSgal">
         <!-- Don't wrap targets in parent -->
         <s id="s1"></s> 
@@ -56,7 +56,7 @@
   box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   margin: 0;
-
+ 
 }
 
 .descricao {
@@ -71,10 +71,9 @@ h1 {
 p {
   font-size: 0.85em;
   margin:5% 0px;
-  color: 000;
 }
 
-.slide {
+.slideencontro {
   width: 100%
 }
 

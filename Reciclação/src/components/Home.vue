@@ -46,7 +46,7 @@ section {
   background-image: url(../assets/fundohome.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  min-height: 105vh;
 }
 
 img {

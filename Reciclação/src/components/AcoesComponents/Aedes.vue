@@ -4,15 +4,15 @@
       <h1>10 min contra o Aedes Aegypti</h1>
       <p>Realizamos uma grande gincana reunindo as crianças e adolescentes que participam dos projetos desenvolvidos na comunidade, além dos moradores e parceiros. Os participantes são divididos em grupos e seguem para uma área especifica da favela para recolher todo e qualquer material descartado de forma irregular, além de descobrir e eliminar focos do mosquito. De forma lúdica e divertida, todos aprendem que uma comunidade saudável é dever e direito de todos.</p>
     </div>
-      <div>
-        <div class="CSSgal">
+      <div class="slideaedes">
+        <div class="CSSgalaedes">
           <!-- Don't wrap targets in parent -->
-          <s id="s1"></s> 
-          <s id="s2"></s>
-          <s id="s3"></s>
-          <s id="s4"></s>
+          <s id="s1aedes"></s> 
+          <s id="s2aedes"></s>
+          <s id="s3aedes"></s>
+          <s id="s4aedes"></s>
 
-          <div class="slider">
+          <div class="slideraedes">
             <div style="background:#5b8;">
               <h2>PURE <b>CSS</b> SLIDESHOW</h2>
             </div>
@@ -27,18 +27,18 @@
             </div>
           </div>
           
-          <div class="prevNext">
-            <div><a href="#s4"></a><a href="#s2"></a></div>
-            <div><a href="#s1"></a><a href="#s3"></a></div>
-            <div><a href="#s2"></a><a href="#s4"></a></div>
-            <div><a href="#s3"></a><a href="#s1"></a></div>
+          <div class="prevNextaedes">
+            <div><a href="#s4aedes"></a><a href="#s2aedes"></a></div>
+            <div><a href="#s1aedes"></a><a href="#s3aedes"></a></div>
+            <div><a href="#s2aedes"></a><a href="#s4aedes"></a></div>
+            <div><a href="#s3aedes"></a><a href="#s1aedes"></a></div>
           </div>
 
-          <div class="bullets">
-            <a href="#s1">1</a>
-            <a href="#s2">2</a>
-            <a href="#s3">3</a>
-            <a href="#s4">4</a>
+          <div class="bulletsaedes">
+            <a href="#s1aedes">1</a>
+            <a href="#s2aedes">2</a>
+            <a href="#s3aedes">3</a>
+            <a href="#s4aedes">4</a>
           </div>
         </div>
       </div>
@@ -82,19 +82,19 @@ img {
 
 
 
-PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+PURE RESPONSIVE CSS3aedes SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
 ===================================================================*/
 
-.CSSgal {
+.CSSgalaedes {
   position: relative;
   overflow: hidden;
   height: 40vh; /* Or set a fixed height */
 }
 
-/* SLIDER */
+/* SLIDERaedes */
 
-.CSSgal .slider {
+.CSSgalaedes .slideraedes {
   height: 100%;
   white-space: nowrap;
   font-size: 0;
@@ -103,7 +103,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* SLIDES */
 
-.CSSgal .slider > * {
+.CSSgalaedes .slideraedes > * {
   font-size: 1rem;
   display: inline-block;
   white-space: normal;
@@ -116,7 +116,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* PREV/NEXT, CONTAINERS & ANCHORS */
 
-.CSSgal .prevNext {
+.CSSgalaedes .prevNextaedes {
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -124,11 +124,11 @@ http://stackoverflow.com/a/34696029/383904
   height: 0;
 }
 
-.CSSgal .prevNext > div+div {
+.CSSgalaedes .prevNextaedes > div+div {
   visibility: hidden; /* Hide all but first P/N container */
 }
 
-.CSSgal .prevNext a {
+.CSSgalaedes .prevNextaedes a {
   background: #fff;
   position: absolute;
   width:       60px;
@@ -142,17 +142,17 @@ http://stackoverflow.com/a/34696029/383904
           transform: translateY(-50%);
   left: 0;
 }
-.CSSgal .prevNext a:hover {
+.CSSgalaedes .prevNextaedes a:hover {
   opacity: 1;
 }
-.CSSgal .prevNext a+a {
+.CSSgalaedes .prevNextaedes a+a {
   left: auto;
   right: 0;
 }
 
 /* NAVIGATION */
 
-.CSSgal .bullets {
+.CSSgalaedes .bulletsaedes {
   position: absolute;
   z-index: 2;
   bottom: 0;
@@ -160,7 +160,7 @@ http://stackoverflow.com/a/34696029/383904
   width: 100%;
   text-align: center;
 }
-.CSSgal .bullets > a {
+.CSSgalaedes .bulletsaedes > a {
   display: inline-block;
   width:       30px;
   height:      30px;
@@ -171,59 +171,59 @@ http://stackoverflow.com/a/34696029/383904
   -webkit-transition: 0.3s;
           transition: 0.3s;
 }
-.CSSgal .bullets > a+a {
+.CSSgalaedes .bulletsaedes > a+a {
   background: rgba(255, 255, 255, 0.5); /* Dim all but first */
 }
-.CSSgal .bullets > a:hover {
+.CSSgalaedes .bulletsaedes > a:hover {
   background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* NAVIGATION BUTTONS */
 /* ALL: */
-.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+.CSSgalaedes >s:target ~ .bulletsaedes >* {      background: rgba(255, 255, 255, 0.5);}
 /* ACTIVE */
-#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
-#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
-#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
-#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+#s1aedes:target ~ .bulletsaedes >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2aedes:target ~ .bulletsaedes >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3aedes:target ~ .bulletsaedes >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4aedes:target ~ .bulletsaedes >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
 /* More slides? Add here more rules */
 
 /* PREV/NEXT CONTAINERS VISIBILITY */
 /* ALL: */
-.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+.CSSgalaedes >s:target ~ .prevNextaedes >* {      visibility: hidden;}
 /* ACTIVE: */
-#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
-#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
-#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
-#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+#s1aedes:target ~ .prevNextaedes >*:nth-child(1) {visibility: visible;}
+#s2aedes:target ~ .prevNextaedes >*:nth-child(2) {visibility: visible;}
+#s3aedes:target ~ .prevNextaedes >*:nth-child(3) {visibility: visible;}
+#s4aedes:target ~ .prevNextaedes >*:nth-child(4) {visibility: visible;}
 /* More slides? Add here more rules */
 
-/* SLIDER ANIMATION POSITIONS */
+/* SLIDERaedes ANIMATION POSITIONS */
 
-#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s1aedes:target ~ .slideraedes {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2aedes:target ~ .slideraedes {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3aedes:target ~ .slideraedes {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4aedes:target ~ .slideraedes {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
 /* More slides? Add here more rules */
 
 
 /* YOU'RE THE DESIGNER! 
    ____________________
    All above was mainly to get it working :)
-   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+   CSSgalaedes CUSTOM STYLES / OVERRIDES HERE: */
 
-.CSSgal{
+.CSSgalaedes{
   color: #fff;  
   text-align: center;
 }
-.CSSgal .slider h2 {
+.CSSgalaedes .slideraedes h2 {
   margin-top: 40vh;
   font-weight: 200;
   letter-spacing: -0.06em;
   word-spacing: 0.2em;
   font-size: 3em;
 }
-.CSSgal a {
+.CSSgalaedes a {
   border-radius: 50%;
   margin: 0 3px;
   color: rgba(0,0,0,0.8);
