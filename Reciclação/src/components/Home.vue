@@ -59,4 +59,16 @@ h1 {
   font-size: 1.34em
 }
 
+@media screen and (min-width: 720px){
+  img {
+    width: 50%
+  }
+}
+
+@media screen and (min-width: 1024px){
+  img {
+    width: 35%
+  }
+
+}
 </style>

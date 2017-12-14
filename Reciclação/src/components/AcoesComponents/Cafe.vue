@@ -6,23 +6,22 @@
     </div>
     <div class="slidecafe">
         <div class="CSSgalcafe">
-          <!-- Don't wrap targets in parent -->
           <s id="s1cafe"></s> 
           <s id="s2cafe"></s>
           <s id="s3cafe"></s>
           <s id="s4cafe"></s>
 
           <div class="slidercafe">
-            <div>
+            <div style="background:#5b8;">
               <h2>PURE <b>CSS</b> SLIDESHOW</h2>
             </div>
-            <div>
+            <div style="background:#85b;">
               <h2>Slide 2</h2>
             </div>
-            <div>
+            <div style="background:#e95;">
               <h2>Slide 3</h2>
             </div>
-            <div>
+            <div style="background:#e59;">
               <h2>Slide 4</h2>
             </div>
           </div>
@@ -35,10 +34,10 @@
           </div>
 
           <div class="bulletscafe">
-            <a href="#s1cafe">1</a>
-            <a href="#s2cafe">2</a>
-            <a href="#s3cafe">3</a>
-            <a href="#s4cafe">4</a>
+            <a href="#s1cafe"></a>
+            <a href="#s2cafe"></a>
+            <a href="#s3cafe"></a>
+            <a href="#s4cafe"></a>
           </div>
         </div>
       </div>
@@ -55,12 +54,16 @@
   box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   margin: 0;
-  background-color: rgba(51, 51, 51, 1)
+  background-color: rgba(51, 51, 51, 1);
+
 }
 
 section {
-  min-height: 100vh;
-  padding: auto 0px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  max-height: 120vh;
+  padding: 10% 0px 0px 0px;
 }
 
 .descricao {
@@ -70,6 +73,7 @@ section {
 h1 {
   font-size: 2.5em;
   color: rgb(0, 146, 63);
+
 }
 
 p {
@@ -86,9 +90,6 @@ img {
   height: 100%
 }
 /*=================================================================
-
-
-
 PURE RESPONSIVE CSS3cafe SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
 ===================================================================*/
@@ -235,6 +236,34 @@ http://stackoverflow.com/a/34696029/383904
   margin: 0 3px;
   color: rgba(0,0,0,0.8);
   text-decoration: none;
+}
+
+@media screen and (min-width: 720px){
+  section {
+    flex-direction: row-reverse;
+    height: 70vh;
+    padding: 0px;
+  }
+
+  .descricao {
+    width: 40%;
+    padding: 0px 0px 0px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .slidecafe {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CSSgalcafe {
+    width:90%; 
+  }
 }
 
 </style>

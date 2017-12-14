@@ -7,7 +7,6 @@
     </div>
       <div class="slidemultirao">
         <div class="CSSgalmultirao">
-          <!-- Don't wrap targets in parent -->
           <s id="s1multirao"></s> 
           <s id="s2multirao"></s>
           <s id="s3multirao"></s>
@@ -25,7 +24,7 @@
             </div>
             <div style="background:#e59;">
               <h2>Slide 4</h2>
-            </div>
+            </div>    
           </div>
           
           <div class="prevNextmultirao">
@@ -36,10 +35,10 @@
           </div>
 
           <div class="bulletsmultirao">
-            <a href="#s1multirao">1</a>
-            <a href="#s2multirao">2</a>
-            <a href="#s3multirao">3</a>
-            <a href="#s4multirao">4</a>
+            <a href="#s1multirao"></a>
+            <a href="#s2multirao"></a>
+            <a href="#s3multirao"></a>
+            <a href="#s4multirao"></a>
           </div>
         </div>
       </div>
@@ -56,6 +55,14 @@
   box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   margin: 0;
+}
+
+section {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  max-height: 120vh;
+  padding: 10% 0px 0px 0px;
 }
 
 .descricao {
@@ -80,9 +87,6 @@ img {
   height: 100%
 }
 /*=================================================================
-
-
-
 PURE RESPONSIVE CSS3multirao SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
 ===================================================================*/
@@ -229,6 +233,35 @@ http://stackoverflow.com/a/34696029/383904
   margin: 0 3px;
   color: rgba(0,0,0,0.8);
   text-decoration: none;
+}
+
+@media screen and (min-width: 720px){
+  section {
+    flex-direction: row-reverse;
+    height: 70vh;
+    padding: 0px;
+  }
+
+  .descricao {
+    width: 40%;
+    padding: 0px 0px 0px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .slidemultirao {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CSSgalmultirao {
+    width:90%; 
+  
+  }
 }
 
 </style>

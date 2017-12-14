@@ -6,7 +6,6 @@
     </div>
       <div class="slidecoleta">
         <div class="CSSgalcoleta">
-          <!-- Don't wrap targets in parent -->
           <s id="s1coleta"></s> 
           <s id="s2coleta"></s>
           <s id="s3coleta"></s>
@@ -35,10 +34,10 @@
           </div>
 
           <div class="bulletscoleta">
-            <a href="#s1coleta">1</a>
-            <a href="#s2coleta">2</a>
-            <a href="#s3coleta">3</a>
-            <a href="#s4coleta">4</a>
+            <a href="#s1coleta"></a>
+            <a href="#s2coleta"></a>
+            <a href="#s3coleta"></a>
+            <a href="#s4coleta"></a>
           </div>
         </div>
       </div>
@@ -55,6 +54,15 @@
   box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   margin: 0;
+  background-color: rgba(133, 194, 38, 1);
+}
+
+section {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 10% 0px 0px 0px;
 }
 
 .descricao {
@@ -64,11 +72,13 @@
 h1 {
   font-size: 2.5em;
   color: rgb(0, 146, 63);
+  color: white;
 }
 
 p {
   font-size: 0.85em;
   margin:5% 0px;
+  color: white;
 }
 
 .slide {
@@ -227,4 +237,31 @@ http://stackoverflow.com/a/34696029/383904
   text-decoration: none;
 }
 
+@media screen and (min-width: 720px){
+  section {
+    flex-direction: row-reverse;
+    height: 70vh;
+    padding: 0px;      
+  }
+
+  .descricao {
+    width: 40%;
+    padding: 0px 0px 0px 4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .slidecoleta {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CSSgalcoleta {
+    width:90%; 
+  
+  }
+}
 </style>

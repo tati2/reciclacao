@@ -6,7 +6,6 @@
     </div>
       <div class="slideaedes">
         <div class="CSSgalaedes">
-          <!-- Don't wrap targets in parent -->
           <s id="s1aedes"></s> 
           <s id="s2aedes"></s>
           <s id="s3aedes"></s>
@@ -35,10 +34,10 @@
           </div>
 
           <div class="bulletsaedes">
-            <a href="#s1aedes">1</a>
-            <a href="#s2aedes">2</a>
-            <a href="#s3aedes">3</a>
-            <a href="#s4aedes">4</a>
+            <a href="#s1aedes"></a>
+            <a href="#s2aedes"></a>
+            <a href="#s3aedes"></a>
+            <a href="#s4aedes"></a>
           </div>
         </div>
       </div>
@@ -55,6 +54,15 @@
   box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   margin: 0;
+  background-color: rgba(122, 196, 159, 1);
+}
+
+section {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  max-height: 120vh;
+  padding: 10% 0px 0px 0px;
 }
 
 .descricao {
@@ -63,7 +71,7 @@
 
 h1 {
   font-size: 2.5em;
-  color: rgb(0, 146, 63);
+  color: rgb(256, 256, 256);
 }
 
 p {
@@ -79,9 +87,6 @@ img {
   height: 100%
 }
 /*=================================================================
-
-
-
 PURE RESPONSIVE CSS3aedes SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
 ===================================================================*/
@@ -228,6 +233,36 @@ http://stackoverflow.com/a/34696029/383904
   margin: 0 3px;
   color: rgba(0,0,0,0.8);
   text-decoration: none;
+}
+
+@media screen and (min-width: 720px){
+  section {
+    flex-direction: row;
+    height: 70vh;
+    padding: 0px;
+  }
+
+  .descricao {
+    width: 40%;
+    padding: 0px 0px 0px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .slideaedes {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CSSgalaedes {
+    width:90%; 
+  
+  }
+
 }
 
 </style>

@@ -51,15 +51,14 @@ export default {
 }
 
 section {
-  background: rgba(122, 180, 32, 0.6);
-  background-size: 100vh;
+  background: rgba(133, 194, 38, 0.6);
+  background-size: 100%;
  
 }
 
 .menu{
   display: flex;
   flex-direction: column;
-  
   padding: 5%
 }
 
@@ -74,16 +73,15 @@ ul {
 li {
   display: flex;
   list-style: none;
-  background-color: white;
   color: #E67816;
   margin: 0;
-  padding: 1%;;
-  width: 100%
+  padding: 1%;
 }
 
 .menuAcoes01 {
- padding-right: 0;
- margin: 0;
-
+  display: flex;
+  width: auto;
+  background-color: white;
+  background-size: 0 auto ;
 }
 </style>

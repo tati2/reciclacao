@@ -6,14 +6,13 @@
       <p>Tais espaços são a Creche Municipal José Marinho de Oliveira, Centro de Desenvolvimento e Educação Integrada Amália Fernandes Conde (Casarão dos Prazeres), Creche Cantinho Feliz, E.M. Julia Lopes de Almeida, E.M. Machado de Assis e C.E. Monteiro de Carvalho</p>
     </div>
     <div class="slideencontro">
-      <div class="CSSgal">
-        <!-- Don't wrap targets in parent -->
+      <div class="CSSgalencontro">
         <s id="s1"></s> 
         <s id="s2"></s>
         <s id="s3"></s>
         <s id="s4"></s>
 
-        <div class="slider">
+        <div class="sliderencontro">
           <div style="background:#5b8;">
             <img src="https://images.vexels.com/media/users/3/131796/isolated/preview/a255fb7cf0cdf19660e0a6257121de8b--cone-do-c-rculo-de-batata-by-vexels.png">
           </div>
@@ -36,10 +35,10 @@
           </div>
 
           <div class="bullets">
-            <a href="#s1">1</a>
-            <a href="#s2">2</a>
-            <a href="#s3">3</a>
-            <a href="#s4">4</a>
+            <a href="#s1"></a>
+            <a href="#s2"></a>
+            <a href="#s3"></a>
+            <a href="#s4"></a>
           </div>
         </div>
       </div>
@@ -56,7 +55,14 @@
   box-sizing: border-box; 
   -webkit-box-sizing: border-box; 
   margin: 0;
- 
+}
+
+section {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  max-height: 120vh;
+  padding: 10% 0px 0px 0px;
 }
 
 .descricao {
@@ -81,22 +87,19 @@ img {
   height: 100%
 }
 /*=================================================================
-
-
-
 PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
 ===================================================================*/
 
-.CSSgal {
+.CSSgalencontro {
   position: relative;
   overflow: hidden;
   height: 40vh; /* Or set a fixed height */
 }
 
-/* SLIDER */
+/* SLIDERencontro */
 
-.CSSgal .slider {
+.CSSgalencontro .sliderencontro {
   height: 100%;
   white-space: nowrap;
   font-size: 0;
@@ -105,7 +108,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* SLIDES */
 
-.CSSgal .slider > * {
+.CSSgalencontro .sliderencontro > * {
   font-size: 1rem;
   display: inline-block;
   white-space: normal;
@@ -118,7 +121,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* PREV/NEXT, CONTAINERS & ANCHORS */
 
-.CSSgal .prevNext {
+.CSSgalencontro .prevNext {
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -126,11 +129,11 @@ http://stackoverflow.com/a/34696029/383904
   height: 0;
 }
 
-.CSSgal .prevNext > div+div {
+.CSSgalencontro .prevNext > div+div {
   visibility: hidden; /* Hide all but first P/N container */
 }
 
-.CSSgal .prevNext a {
+.CSSgalencontro .prevNext a {
   background: #fff;
   position: absolute;
   width:       60px;
@@ -144,17 +147,17 @@ http://stackoverflow.com/a/34696029/383904
           transform: translateY(-50%);
   left: 0;
 }
-.CSSgal .prevNext a:hover {
+.CSSgalencontro .prevNext a:hover {
   opacity: 1;
 }
-.CSSgal .prevNext a+a {
+.CSSgalencontro .prevNext a+a {
   left: auto;
   right: 0;
 }
 
 /* NAVIGATION */
 
-.CSSgal .bullets {
+.CSSgalencontro .bullets {
   position: absolute;
   z-index: 2;
   bottom: 0;
@@ -162,7 +165,7 @@ http://stackoverflow.com/a/34696029/383904
   width: 100%;
   text-align: center;
 }
-.CSSgal .bullets > a {
+.CSSgalencontro .bullets > a {
   display: inline-block;
   width:       30px;
   height:      30px;
@@ -173,16 +176,16 @@ http://stackoverflow.com/a/34696029/383904
   -webkit-transition: 0.3s;
           transition: 0.3s;
 }
-.CSSgal .bullets > a+a {
+.CSSgalencontro .bullets > a+a {
   background: rgba(255, 255, 255, 0.5); /* Dim all but first */
 }
-.CSSgal .bullets > a:hover {
+.CSSgalencontro .bullets > a:hover {
   background: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* NAVIGATION BUTTONS */
 /* ALL: */
-.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+.CSSgalencontro >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
 /* ACTIVE */
 #s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
 #s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
@@ -192,7 +195,7 @@ http://stackoverflow.com/a/34696029/383904
 
 /* PREV/NEXT CONTAINERS VISIBILITY */
 /* ALL: */
-.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+.CSSgalencontro >s:target ~ .prevNext >* {      visibility: hidden;}
 /* ACTIVE: */
 #s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
 #s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
@@ -200,36 +203,65 @@ http://stackoverflow.com/a/34696029/383904
 #s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
 /* More slides? Add here more rules */
 
-/* SLIDER ANIMATION POSITIONS */
+/* SLIDERencontro ANIMATION POSITIONS */
 
-#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
-#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
-#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
-#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+#s1:target ~ .sliderencontro {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .sliderencontro {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .sliderencontro {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .sliderencontro {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
 /* More slides? Add here more rules */
 
 
 /* YOU'RE THE DESIGNER! 
    ____________________
    All above was mainly to get it working :)
-   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+   CSSgalencontro CUSTOM STYLES / OVERRIDES HERE: */
 
-.CSSgal{
+.CSSgalencontro{
   color: #fff;  
   text-align: center;
 }
-.CSSgal .slider h2 {
+.CSSgalencontro .sliderencontro h2 {
   margin-top: 40vh;
   font-weight: 200;
   letter-spacing: -0.06em;
   word-spacing: 0.2em;
   font-size: 3em;
 }
-.CSSgal a {
+.CSSgalencontro a {
   border-radius: 50%;
   margin: 0 3px;
   color: rgba(0,0,0,0.8);
   text-decoration: none;
 }
 
+@media screen and (min-width: 720px){
+  section {
+    flex-direction: row;
+    height: 70vh;
+    padding: 0px;
+  }
+
+  .descricao {
+    width: 40%;
+    padding: 0px 0px 0px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .slideencontro {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CSSgalencontro {
+    width:90%; 
+  
+  }
+
+}
 </style>

@@ -1,5 +1,8 @@
 <template>
 	<section>
+		<div>
+			<menu></menu>
+		</div>
 		<div >
 			<encontros></encontros>
 		</div>
@@ -25,6 +28,7 @@
 	</section>
 </template>
 <script>
+import menu from "./Menu"
 import encontros from "./AcoesComponents/Encontros"
 import cafe from "./AcoesComponents/Cafe"
 import palestra from "./AcoesComponents/Palestra"
@@ -34,7 +38,7 @@ import coleta from "./AcoesComponents/Coleta"
 
 export default {
 	name: 'AcoesComponent',
-	components: { encontros , cafe , palestra , multirao , aedes , coleta },
+	components: { menu, encontros , cafe , palestra , multirao , aedes , coleta },
 	data() {
 	}
 }
@@ -44,12 +48,11 @@ export default {
 
 
 div {
-	height: auto;
+	max-height: 100vh;
 
 }
 
-encontros, cafe, palestra, multirao, aedes, coleta {
-
-} 
-	
+manu {
+	height: 10vh;
+}	
 </style>

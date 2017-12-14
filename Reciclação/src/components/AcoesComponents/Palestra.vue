@@ -6,7 +6,6 @@
     </div>
       <div class="slidepalestra">
         <div class="CSSgalpalestra">
-          <!-- Don't wrap targets in parent -->
           <s id="s1palestra"></s> 
           <s id="s2palestra"></s>
           <s id="s3palestra"></s>
@@ -35,10 +34,10 @@
           </div>
 
           <div class="bulletspalestra">
-            <a href="#s1palestra">1</a>
-            <a href="#s2palestra">2</a>
-            <a href="#s3palestra">3</a>
-            <a href="#s4palestra">4</a>
+            <a href="#s1palestra"></a>
+            <a href="#s2palestra"></a>
+            <a href="#s3palestra"></a>
+            <a href="#s4palestra"></a>
           </div>
         </div>
       </div>
@@ -61,6 +60,14 @@
   padding: 5%;
 }
 
+section {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  max-height: 120vh;
+  padding: auto 0px;
+}
+
 h1 {
   font-size: 2.5em;
   color: rgb(0, 146, 63);
@@ -79,9 +86,6 @@ img {
   height: 100%
 }
 /*=================================================================
-
-
-
 PURE RESPONSIVE CSS3palestra SLIDESHOW GALLERY by Roko C. buljan
 http://stackoverflow.com/a/34696029/383904
 ===================================================================*/
@@ -228,6 +232,34 @@ http://stackoverflow.com/a/34696029/383904
   margin: 0 3px;
   color: rgba(0,0,0,0.8);
   text-decoration: none;
+}
+
+@media screen and (min-width: 720px){
+  section {
+    flex-direction: row;
+    height: 70vh;
+    padding: 0px;
+  }
+
+  .descricao {
+    width: 40%;
+    padding: 0px 0px 0px 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .slidepalestra {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CSSgalpalestra {
+    width:90%; 
+  }
 }
 
 </style>

@@ -1,7 +1,10 @@
 <template>
   <div class="menu">
     <nav>
-      <img src="../assets/menu-icon.png">
+      <div class="logos">
+        <img class="logoapp" src="../assets/menu-icon.png">
+        <img class="logodesk" src="../assets/Logo_P.svg">
+      </div>
       <ul>
         <li>Sobre</li>
         <li>Ações</li>
@@ -37,13 +40,24 @@ nav {
   justify-content: center;
   flex-direction: row;
   width: 100%;
+  height: 15vh;
+}
+
+.logos {
+  display: flex;
+  width: 10vh
 }
 
 img {
   display: flex;
   align-self: flex-start;
-  width: 13%;
+  width: 100%;
   height: 60%;
+  align-items: center;
+}
+
+.logodesk {
+  display: none;
 }
 
 ul {
@@ -53,6 +67,7 @@ ul {
   flex-flow: row wrap ;
   padding: 0;
   margin: 0 5%;
+  width: 70%;
 }
 
 li {
@@ -60,35 +75,70 @@ li {
   list-style: none;
   color: rgb(230, 120, 34);
   font-size: 1em;
-  margin: 2%;
-  width: 45%;
+  margin: 0% 0% 0% 0%;
+  width: 50%;
 }
 
 @media screen and (min-width: 720px){
 
+   .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+
+  }
+
+  .logos {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logoapp {
+    display: none;
+  }
+
+  .logodesk {
+    display: block;
+    width: 45%;
+  } 
+
+    img {
+    width: 5%;
+    height: 100%;
+  }
+
   nav {
     height: 6vh;
+    width: 100%;
     justify-content: space-around;
   }
 
-  ul{
-    width: 90%;
-    justify-content: space-around;
-    flex-flow: row nowrap;
-    margin: 0px;
+  ul {
+    width: 80%;
+    align-self: center ;
+    justify-content: flex-end;  
+    align-content: center;
+    margin: auto;
+    flex-flow: row nowrap ;
+    margin: 0px
   }
-
+  
   li {
-    width: 10%;
-    margin: 0px;
-    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
     margin: auto 0;
+    font-size: 0.8em;
+    width: 
   }
+}
 
-  img {
-    width: 10%;
-    height: 0;
+@media screen and (min-width: 1024px){
+  li {
+    font-size: 1em
   }
 
 }
 </style>
+
