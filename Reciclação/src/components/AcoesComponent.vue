@@ -48,7 +48,7 @@ export default {
 
 
 div {
-	max-height: 100vh;
+	max-height: 120vh;
 
 }
 
