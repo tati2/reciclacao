@@ -26,20 +26,10 @@
 </template>
 
 <script>
-import axios from 'axios';
 
 export default {
   name: 'Sobre',
   data () {
-    return {
-      respostas: [],
-    }
-  },
-  created() {
-    axios.get(`http://jsonplaceholder.typicode.com/users`)
-    .then(response => {
-      this.respostas = response.data
-    })
   }
 }
 </script>

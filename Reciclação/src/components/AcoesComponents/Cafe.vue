@@ -62,7 +62,7 @@ section {
   display: flex;
   align-content: center;
   flex-direction: column;
-  max-height: 120vh;
+  max-height: 85vh;
   padding: 10% 0px 0px 0px;
 }
 
