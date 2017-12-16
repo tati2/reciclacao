@@ -14,7 +14,8 @@
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vue-slide": "^1.1.1",
-    "vue-slider-component": "^2.4.7"
+    "vue-slider-component": "^2.4.7",
+    "vue2-google-maps": "^0.8.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",

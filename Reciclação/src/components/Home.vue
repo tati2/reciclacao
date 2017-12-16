@@ -11,17 +11,17 @@
     <div>
       <Acoes></Acoes>
     </div>
-    <div>
+   <!--  <div>
       <impacto></impacto>
+    </div> -->
+    <div>
+      <mapa></mapa>
     </div>
     <div>
-      
+      <quiz></quiz>
     </div>
     <div>
-      
-    </div>
-    <div>
-      
+      <foter></foter>      
     </div>
     <div>
       
@@ -36,11 +36,14 @@
 import Acoes from "./Acoes"
 import Menu from "./Menu"
 import Sobre from "./Sobre"
-import impacto from "./Text"
+// import impacto from "./Text"
+import mapa from "./Pontosdecoleta"
+import quiz from "./Hello"
+import foter from "./Footer"
 
 export default {
   name: 'hello',
-  components: { Acoes, Menu, Sobre, impacto },
+  components: { mapa ,Acoes, Menu, Sobre, quiz , foter},
   data () {
     return {
      
@@ -91,6 +94,10 @@ h1 {
   align-items: center;
 }
 
+foter {
+  height: 50vh
+}
+
 @media screen and (min-width: 720px){
   img {
     width: 50%
@@ -105,7 +112,6 @@ h1 {
   img {
     width: 35%
   }
-
 
   .csobre {
     min-height: 80vh
