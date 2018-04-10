@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <section>
     <div class="contato">
       <p class="contato-endereco">Contato</p>
       <ul class="endereco">
@@ -45,7 +45,7 @@
         </div>
       </section>
     </div>
-  </footer>
+  </section>
 </template>
 
 <script>
@@ -58,161 +58,32 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-body{
-  display: flex;
-  align-items: stretch;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 auto;
-  width: 100%;
-  
-}
+  section{
+    display: flex;
+    background: #303030;
+    min-height: 100vh;
 
-footer{
-  background: #303030;
-  text-align: left;
-  min-height: 100vh;
-}
-  @media (min-width: 1024px){
-footer{
-    width: 100%;
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
   }
-}
- @media (min-width: 1024px){
-.contato{
-  width: 25%;
+  .contato{
+    display: flex;
+    flex-direction:column;
+    color: #85C226;
+
+
   }
-}
+  .contato-info{
 
-.contato-endereco{
-  color: #85C226;
-  font-size: 2em;
-  margin-left: 15px;
-  font-family: 'Roboto Slab', bold;;
-}
+    list-style: none;
+    justify-content: center;
+    line-height: 2em;
+    
 
-.endereco-item{
-  color: #85C226;
-  font-size: 1.25em;
-  margin-left: 15px;
-  font-family: 'Roboto Slab';
-  line-height: 1.25em;
-}
-.contato-tel{
-  color: #85C226;
-  font-size: 1.45em;
-  font-family: 'Roboto Slab', lighter;
-  line-height: 4em;
-}
-.img-contato{
-  width: 4%;
-  margin-left: 10px;
-  margin-right: 15px;
-}
 
-.contato-social{
-  color:#E67816;
-  font-size: 1.45em;
-  font-family: 'Roboto Slab', lighter;
-}
-  @media (min-width: 1024px){
-  .projeto{
-    margin:20px;
+    
   }
-}
+  .img-contato{
+    width: 20px;
+    margin: 3px;
 
-.projetos-desen{
-  color: #85C226;
-  font-size: 2em;
-  margin-left: 15px;
-  font-family: 'Roboto Slab',bold;
-}
-  @media (min-width: 1024px){
-    .projetos-desen{
-      font-size: 2.37em;
   }
-}
-
-.projetos-item{
-  color: #85C226;
-  font-size: 1.05em;
-  margin-left: 15px;
-  font-family: 'Roboto', thin;
-}
-
-.parceiro{
-  display: flex;
-  width: 80%;
-  font-size:11px;
-  line-height: 1,5em;
-  margin-left: 20px; 
-}
-ul{
-  margin-left: 0;
-  list-style: none;
-  color: #85C226;
-  font-size: 11px; 
-  line-height: 18px;
-}
-
-
-.parceiro-info{
-  width: 100%;
-  color: #85C226;
-  font-size: 3em;
-  margin-left: 15px;
-  font-family: 'Roboto Slab', bold;;
-}
-
-    @media (min-width: 1024px){
-      .parceiro-info{
-        margin: 0;
-      }
-    }
-
-.projetos-topicos{
-  color:#85C226;
-  line-height: 2em; 
-}
-
-.footer{
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  display: flex;
-  padding: 0 0 0 15px;
-}
-
-.footer-parceiro{
-  width: 55%;
-  color: #E67816;
-  font-size: 11px;
-  line-height: 1,5em;
-  display: flex;
-  left: 10px;
-  bottom: 79px;
-  flex-direction: column;
-  align-self: auto stretch;
-}
-
-.footer-parceiro ul {
-  width: 100%
-}
-
-.footer-parceiro2{
-  color: #E67816;
-  font-size: 11px;
-  display: flex;
-  margin-left: 15px;
-}
-
-a:link, a:visited{
-  text-decoration: none;
-  color: #E67816;
-}
 </style>
