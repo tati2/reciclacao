@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="section-principal">
     <div class="contato">
       <p class="contato-endereco">Contato</p>
       <ul class="endereco">
@@ -12,7 +12,7 @@
       </ul>      
     </div>
     <div class="projeto">
-      <p class="projetos-desen">Projetos Relacionados</p>
+      <p class="projetos-envolvido">Projetos Relacionados</p>
       <ul class="projetos-topicos">
         <li class="projetos-item">Jovens Construtores - Morro do Prazeres</li>
         <li class="projetos-item">Núcleo de Desenvolvimento Econômico Sustentável</li>
@@ -25,7 +25,7 @@
       <div class="parceiro">
         <p class="parceiro-info">Parceiros</p>
       </div>
-      <section>
+      <section class="parceria">
         <div class="footer-parceiro">
           <ul>
             <li class="parceirolinha"<a href="">BrasilPet</a></li>
@@ -58,32 +58,88 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  section{
+  .section-principal{
     display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: center;
+    padding: 10px;
     background: #303030;
-    min-height: 100vh;
+    height: 100vh;
+    font-family: 'Roboto Slab, Regular';
 
   }
-  .contato{
+  .contato {
     display: flex;
+
     flex-direction:column;
     color: #85C226;
 
 
   }
+  .contato-endereco{
+    font-size: 2em;
+    margin: 10px;
+    padding-left: 5px;
+
+
+
+  }
+  
   .contato-info{
 
     list-style: none;
     justify-content: center;
-    line-height: 2em;
-    
+    line-height: 1.5;
 
-
-    
   }
+  .endereco{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+
+  }
+  .projeto{
+    display: flex;
+    flex-direction: column;
+    color: #85C226;
+
+  }
+  .projetos-envolvido{
+    font-size: 2em;
+    margin: 10px;
+  } 
+  .projetos-topicos{
+    list-style: none;
+    line-height: 1.5;
+  } 
   .img-contato{
     width: 20px;
-    margin: 3px;
+    /*margin: 3px;*/
 
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: #85C226;
+
+  }
+
+  .parceirolinha{
+    list-style: none;
+    line-height: 1.5;
+  }
+  .parceiro-info{
+    font-size: 2em;
+    margin: 10px;
+  }
+  .parceria{
+    display:flex;
+  }
+  a {
+    text-decoration:none;
+    color: #E67816; 
   }
 </style>
