@@ -61,8 +61,8 @@ export default {
   .section-principal{
     display: flex;
     align-items:center;
-    justify-content: center;
-    flex-direction: center;
+    justify-content: space-around;
+  /*  flex-direction: center*/;
     padding: 10px;
     background: #303030;
     height: 100vh;
@@ -71,7 +71,6 @@ export default {
   }
   .contato {
     display: flex;
-
     flex-direction:column;
     color: #85C226;
 
@@ -81,8 +80,12 @@ export default {
     font-size: 2em;
     margin: 10px;
     padding-left: 5px;
+    margin-left: 10%;
 
-
+  }
+  .contato-social{
+    color: #E67816; 
+    margin-top: 5px;
 
   }
   
@@ -108,6 +111,7 @@ export default {
   .projetos-envolvido{
     font-size: 2em;
     margin: 10px;
+    margin-left: 10%;
   } 
   .projetos-topicos{
     list-style: none;
@@ -134,6 +138,8 @@ export default {
   .parceiro-info{
     font-size: 2em;
     margin: 10px;
+    margin-left: 10%;
+
   }
   .parceria{
     display:flex;
@@ -142,4 +148,8 @@ export default {
     text-decoration:none;
     color: #E67816; 
   }
+  @media screen and (max-width: 640px) {
+    
+  }
+  
 </style>
