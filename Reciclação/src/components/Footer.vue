@@ -25,7 +25,7 @@
       <div class="parceiro">
         <p class="parceiro-info">Parceiros</p>
       </div>
-      <section class="parceria">
+      <div class="parceria">
         <div class="footer-parceiro">
           <ul>
             <li class="parceirolinha"<a href="">BrasilPet</a></li>
@@ -43,7 +43,7 @@
             <li class="parceirolinha"><a href="https://proario.wordpress.com/">Grupo PROA</a></li>
           </ul>
         </div>
-      </section>
+      </div>
     </div>
   </section>
 </template>
@@ -149,7 +149,36 @@ export default {
     color: #E67816; 
   }
   @media screen and (max-width: 640px) {
-    
-  }
+    .section-principal {
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .endereco{
+      line-height: 1.5;
+    }
+    .contato-info{
+      line-height: 1.5;
+      margin: 3px;
+    }
+    .contato-tel{
+      margin-top: 15%;
+    }
+    .contato {
+      margin-right: 18%;
+      
+    }
+    .projeto{
+      align-items: center;
+      margin-top: 4%;
+    }
+    .projetos-envolvido{
+      margin-right: 9%;
+    }
+    .projetos-topicos{
+      font-size: 1em;
+    }
+       
+    }
   
 </style>
