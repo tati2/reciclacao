@@ -65,93 +65,97 @@ export default {
   /*  flex-direction: center*/;
     padding: 10px;
     background: #303030;
-    height: 100vh;
-    font-family: 'Roboto Slab, Regular';
+    height: 50vh;
+    font-family: 'Roboto Slab, Bold';
 
   }
   .contato {
     display: flex;
     flex-direction:column;
     color: #85C226;
-
-
   }
+
   .contato-endereco{
     font-size: 2em;
     margin: 10px;
     padding-left: 5px;
     margin-left: 10%;
-
   }
+
   .contato-social{
     color: #E67816; 
     margin-top: 5px;
-
   }
-  
+
   .contato-info{
-
     list-style: none;
+    font-size: 'Roboto Slab, Light';
     justify-content: center;
-    line-height: 1.5;
-
+    line-height: 1.7;
   }
+
   .endereco{
     display: flex;
     flex-direction: column;
     list-style: none;
-
   }
+
   .projeto{
     display: flex;
     flex-direction: column;
     color: #85C226;
-
   }
+
   .projetos-envolvido{
     font-size: 2em;
     margin: 10px;
     margin-left: 10%;
-  } 
+  }
+
   .projetos-topicos{
     list-style: none;
     line-height: 1.5;
+    font-size: 'Roboto Slab, Thin'
   } 
-  .img-contato{
-    width: 20px;
-    /*margin: 3px;*/
 
+  .img-contato{
+    width: 15px;
+    margin-right:3%;
   }
 
   .footer{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     color: #85C226;
-
   }
 
   .parceirolinha{
     list-style: none;
     line-height: 1.5;
   }
+
   .parceiro-info{
-    font-size: 2em;
+    font-size:2em;
+
     margin: 10px;
-    margin-left: 10%;
+    margin-left: 9%;
 
   }
   .parceria{
     display:flex;
+    font-size: 'Roboto Slab, Thin';
   }
+
   a {
     text-decoration:none;
     color: #E67816; 
   }
+
   @media screen and (max-width: 640px) {
     .section-principal {
       display: flex;
       flex-direction: column;
+      height: 100%;
       
     }
     .endereco{
@@ -160,13 +164,7 @@ export default {
     .contato-info{
       line-height: 1.5;
       margin: 3px;
-    }
-    .contato-tel{
       margin-top: 15%;
-    }
-    .contato {
-      margin-right: 18%;
-      
     }
     .projeto{
       align-items: center;
