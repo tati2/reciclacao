@@ -63,7 +63,7 @@ export default {
     align-items:center;
     justify-content: space-around;
   /*  flex-direction: center*/;
-    padding: 10px;
+   /* padding: 10px;*/
     background: #303030;
     height: 50vh;
     font-family: 'Roboto Slab, Bold';
@@ -84,7 +84,7 @@ export default {
 
   .contato-social{
     color: #E67816; 
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .contato-info{
@@ -136,7 +136,6 @@ export default {
 
   .parceiro-info{
     font-size:2em;
-
     margin: 10px;
     margin-left: 9%;
 
@@ -164,7 +163,7 @@ export default {
     .contato-info{
       line-height: 1.5;
       margin: 3px;
-      margin-top: 15%;
+      margin-top: 5%;
     }
     .projeto{
       align-items: center;
